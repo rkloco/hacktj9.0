@@ -24,6 +24,7 @@ function App(props) {
         <p>Coordinates:</p>
         <div>{getMessage.status === 200 ? 
           <h3>{getMessage.data.message}</h3>
+          <img src={`data:image/png};base64,${getMessage.data.img}`}></img>
           :
           <h3>LOADING</h3>}
         </div>
